@@ -8,4 +8,23 @@ from pytvmaze.version import __version__
 
 import pytvmaze.harvest  # noqa: F401  (import for @register side effects)
 
-__all__ = ["__version__"]
+from pytvmaze.client import TVmazeClient
+from pytvmaze.models import (
+    TVmazeNetwork,
+    TVmazeExternals,
+    TVmazeShow,
+    TVmazePerson,
+    TVmazeSeason,
+    TVmazeCastMember,
+)
+
+__all__ = [
+    "__version__",
+    "TVmazeClient",
+    "TVmazeNetwork",
+    "TVmazeExternals",
+    "TVmazeShow",
+    "TVmazePerson",
+    "TVmazeSeason",
+    "TVmazeCastMember",
+]
